@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
-.text, .link, p, h1, h2, h3, h4, h5, h6, a {
+.text, .link, p, h1, h2, h3, h4, h5, h6, a, label, legend, span, textarea, button, html, body, footer {
 	color: white;
 	font-family: 'Raleway', sans-serif;
 }
@@ -19,9 +19,10 @@ textarea {
 	height: 50px;
 	width: 100%;
 	border-radius: 6px;
-	background-color: #10193d;
-	color: #7289da;
+	background-color: #2e4152;
+	color: white;
 	border: none;
+	cursor: pointer;
 }
 
 .select, select {
@@ -34,6 +35,17 @@ textarea {
 	background-color: #373e48;
 	border-radius: 5px;
 	box-shadow: 4px 4px #2c323a;
+}
+
+option {
+	background-color: #373e48;
+	font-family: 'Raleway', sans-serif;
+	width: 100%;
+	height: 30px;
+	border: none;
+	font-size: 18px;
+	color: white;
+	border-radius: 5px;
 }
 
 html {
@@ -72,6 +84,7 @@ fieldset {
 	background-color: #161f27;
 	color: white;
 	border: none;
+	padding-left: 3px;
 }
 
 blockquote {
@@ -107,28 +120,40 @@ table, th, td {
 }
 
 tr:nth-child(even) { 
-    background-color: #161f27; 
+    background-color: #1c2731; 
 }
 tr:nth-child(odd) { 
     background-color: #373e48; 
 }
 
-.alert {
-	background-color: rgb(135, 33, 41);
-	color: white !important;
-	border: 1px solid transparent;
-	border-color: rgb(147, 36, 47);
+.alert, .success, .info, .warning {
 	border-radius: .25rem;
 	padding: 12px;
+	border: 1px solid transparent;
+}
+
+.alert {
+	color: #842029;
+	background-color: #f8d7da;
+	border-color: #f5c2c7;
 }
 
 .success {
-	background-color: rgb(26, 62, 41);
-	color: rgb(153, 230, 171) !important;
-	border: 1px solid transparent;
-	border-color: rgb(37, 90, 50);
-	border-radius: .25rem;
-	padding: 12px;
+	color: #0f5132;
+	background-color: #d1e7dd;
+	border-color: #badbcc;
+}
+
+.warning {
+	color: #664d03;
+	background-color: #fff3cd;
+	border-color: #ffecb5;
+}
+
+.info {
+	color: #055160;
+	background-color: #cff4fc;
+	border-color: #b6effb;
 }
 
 .coded-on-replit {
@@ -177,13 +202,16 @@ tr:nth-child(odd) {
   border-radius: 8px;
 }
 
+.topnavitem {
+	vertical-align: middle;
+}
+
 .topnavitem a:hover {
   border-radius: 8px;
   color: white;
 }
 
 .topnav a.active {
-  border-radius: 8px;
   color: white;
 }
 
@@ -198,4 +226,123 @@ tr:nth-child(odd) {
 	font-family: 'Raleway', sans-serif;
 	background-color: #373e48;
 	border-radius: 6px;
+}
+
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+	background-color: #2e4152;
+	border: none;
+	border-radius: 8px;
+	width: 100px;
+}
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding-top: 10px;
+	padding-left: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+	height: 50px;
+	border-radius: 6px;
+	width: 10%;
+}
+
+.fileUpload p {
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	margin-top: 15px !important;
+	padding-left: 20px;
+	width: 10%;
+}
+
+
+.card {
+	background-color: #16191d;
+	height: 100%;
+	width: 45%;
+	padding-bottom: 40px;
+	padding-left: 20px;
+	padding-right: 10px;
+	padding-top: 20px;
+	border: none;
+	border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+html {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.page {
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+	width: 100%;
+}
+
+.card {
+	background-color: #16191d;
+	height: 100%;
+	width: 90%;
+	padding-bottom: 40px;
+	padding-left: 20px;
+	padding-right: 10px;
+	padding-top: 20px;
+	border: none;
+	border-radius: 8px;
+}
+
+.sidebar {
+	position: absolute;
+	margin-left: 200px !important;
+}
+}
+
+.page {
+	background-color: #21252b;
+	margin-left: 200px;
+	margin-right: 200px;
+	height: 100%;
+	padding-right: 10px;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-bottom: 200px !important;
+	border: none;
+	border-radius: 6px;
+	overflow: hidden !important;
+}
+
+.page img {
+	width: 200px;
+}
+
+.sidebar {
+	background: #21252b;
+	position: fixed;
+	width: 200px;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	margin-left: 0px !important;
+	padding: 20px;
+	padding-left: 0px;
+	padding-top: 110px;
+}
+
+.sidebar ul, .sidebar ol {
+	list-style-type: none;
+}
+
+.sidebar a {
+	text-decoration: none;
+}
+
+.center {
+	text-align: center;
 }
