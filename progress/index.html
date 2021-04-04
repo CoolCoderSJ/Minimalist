@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Minimalist</title>
+	
+    <link href="../style.css" rel="stylesheet" type="text/css" />
+	<link href="../other.css" rel="stylesheet" type="text/css" />
+	<style>
+		html {
+			background-color: #2c323a;
+			margin-left: 200px !important;
+		}
+	</style>
+	<link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/atom-one-dark.min.css">
+				<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+				<script>hljs.initHighlightingOnLoad();</script>
+	<div class="sidebar">
+		  <ul>
+			  <a href="/">
+			  <li>Getting Started</li>
+			  </a>
+			  <br>
+			  <p>Components -</p>
+			  <hr>
+			  <a href="../text">
+			  <li>Text</li>
+			  </a>
+			  <br>
+			  <a href="../misc">
+			  <li>Miscellaneous</li>
+			  </a>
+			  <br>
+			  <a href="../lists">
+			  <li>Lists</li>
+			  </a>
+			  <br>	
+			  <a href="../forms">
+			  <li>Forms</li>
+			  </a>
+			  <br>
+			  <a href="../code">
+			  <li>Code</li>
+			  </a>
+			  <br>
+			  <a href="../quotes">
+			  <li>Quotes</li>
+			  </a>
+			  <br>		
+			  <a href="../tables">
+			  <li>Tables</li>
+			  </a>
+			  <br> 
+			  <a href="../cards">
+			  <li>Cards</li>
+			  </a>
+			  <br> 
+			  <a href="../pages">
+			  <li>Pages</li>
+			  </a>
+			  <br>
+			  <a href="../nav">
+			  <li>Navbar</li>
+			  </a>
+			  <br>
+			  <a href="../buttons">
+			  <li>Buttons</li>
+			  </a>
+			  <br>
+			  <a href="../msgs">
+			  <li>Messages</li>
+			  </a>
+			  <br>
+			  <a href="../badges">
+			  <li>Badges</li>
+			  </a>
+			  <br>
+			  <a href="../badges2">
+			  <li>Badges (The other ones)</li>
+			  </a>
+			  <br>
+			  <a href="../notifs">
+			  <li>Notifications</li>
+			  </a>
+			  <br>
+			  <a href="../tabs">
+			  <li>Navbar Tabs</li>
+			  </a>
+			  <br>
+			  <a href="../progress">
+			  <li>Progress Bars</li>
+			  </a>
+			  <br>
+		  </ul>
+	  </div>
+	 <div class="topnav text">
+		<a class="brand" href="#">Minimalist</a>
+		<div class="topnavitem">
+		 <a class="active topnavitem" href="#">Home</a>
+  <a class="topnavitem" href="/demo">Demo</a>
+  </div>
+</div> 
+
+  </head>
+  <body>
+	  <script src="../script.js"></script>
+	  <div class='page'>
+	  <h1 class="text">Progress Bars</h1>
+<br><br>
+
+<div class="progressbg">
+	<div class="progress" style="width: 30%"></div>
+</div>
+<br>
+<div class="progressbg">
+	<div class="progress-alert" style="width: 40%"></div>
+</div>
+<br>
+<div class="progressbg">
+	<div class="progress-success" style="width: 50%"></div>
+</div>
+<br>
+<div class="progressbg">
+	<div class="progress-warning" style="width: 60%"></div>
+</div>
+<br>
+<div class="progressbg">
+	<div class="progress-info" style="width: 70%"></div>
+</div>
+
+<pre>
+	<code class='language-html'>
+&lt;div class="progressbg">
+	&lt;div class="progress" style="width: 30%">&lt;/div>
+&lt;/div>
+&lt;br>
+&lt;div class="progressbg">
+	&lt;div class="progress-alert" style="width: 40%">&lt;/div>
+&lt;/div>
+&lt;br>
+&lt;div class="progressbg">
+	&lt;div class="progress-success" style="width: 50%">&lt;/div>
+&lt;/div>
+&lt;br>
+&lt;div class="progressbg">
+	&lt;div class="progress-warning" style="width: 60%">&lt;/div>
+&lt;/div>
+&lt;br>
+&lt;div class="progressbg">
+	&lt;div class="progress-info" style="width: 70%">&lt;/div>
+&lt;/div>
+	</code>
+</pre>
+<p>There are 5 classes-<br><br>
+<code class="code">progress</code> - A normal progress bar. (First one shown)
+<br><br>
+<code class="code">progress-alert</code> - A red progress bar. (Second one shown)
+<br><br>
+<code class="code">progress-success</code> - A green progress bar. (Third one shown)
+<br><br>
+<code class="code">progress-warning</code> - A yellow progress bar. (Fourth one shown)
+<br><br>
+<code class="code">progress-info</code> - A lighter shade of blue progress bar. (Last one shown)
+<br><br>
+You can customize how much of the bar is filled by changing the width css var for the inner div.
+</p>
+
+<br><br>
+<h2>Animated Bars</h2>
+<button onclick="animate_progress(document.getElementById('animated_bar'), 10, 30, 100)">Start Animation</button><br><br>
+<div class="progressbg">
+	<div id="animated_bar" class="progress" style="width: 30%"></div>
+</div>
+
+<pre>
+	<code class="language-html">
+&lt;button onclick="animate_progress(document.getElementById('animated_bar'), 10, 30, 100)">Start Animation&lt;/button>&lt;br>&lt;br>
+&lt;div class="progressbg">
+	&lt;div id="animated_bar" class="progress" style="width: 30%">&lt;/div>
+&lt;/div>
+	</code>
+</pre>
+<br><br>
+<p>To use an animated progress bar, you need to import the MinimalistJS file as well. (See <a href="/">Getting Started</a>). To animate the bar, call the following function with the following parameters in the following order-<br><br>
+<code class="code">animate_progress(elem, speed, start, end)</code>
+<br><br>
+<code class="code">elem</code> is the progress bar element.
+<br><br>
+<code class="code">speed</code> is the how fast the progress bar should fill. The number is in terms of milliseconds. The speed is the wait time between each percent of the bar filled.
+<br><br>
+<code class="code">start</code> is the percent at which to start.
+<br><br>
+<code class="code">end</code> is the percent number at which to stop.
+</p>
+<br><br>
+<h2>Custom Height</h2>
+<div class="progressbg" style="height: 1px;">
+	<div class="progress" style="width: 30%; height: 1px;"></div>
+</div>
+<br>
+<div class="progressbg" style="height: 20px;">
+	<div class="progress" style="width: 30%; height: 20px;"></div>
+</div>
+
+<br>
+<pre class="html">
+	<code>
+&lt;div class="progressbg" style="height: 1px;">
+	&lt;div class="progress" style="width: 30%; height: 1px;">&lt;/div>
+&lt;/div>
+&lt;br>
+&lt;div class="progressbg" style="height: 20px;">
+	&lt;div class="progress" style="width: 30%; height: 20px;">&lt;/div>
+&lt;/div>
+	</code>
+</pre>
+
+<br>
+<p>You can change the height of the progress bar by changing the CSS height variable. Be sure to change the height of both divs to make sure it renders properly.</p>
+
+
+</div>
+<link rel="stylesheet" href="https://badge.coolcodersj.repl.co/style.css">
+<a class="badge no-animate" href="https://github.com/CoolCoderSJ/Minimalist" target="_blank">
+		<img src="https://res.cloudinary.com/dakygv2vu/image/upload/v1617208357/cdn/gbmfzv.png" alt="replit" />
+    View on Github
+  </a>
+  </body>
+
+</html>

@@ -96,10 +96,10 @@
 		  </ul>
 	  </div>
 	 <div class="topnav text">
-		<a class="brand" href="/">Minimalist</a>
+		<a class="brand" href="#">Minimalist</a>
 		<div class="topnavitem">
-		 <a class="active topnavitem" href="#">Home</a>
-  <a class="topnavitem" href="/demo">Demo</a>
+		 <a class="active topnavitem tab tabactive" href="#">Home</a>
+  <a class="topnavitem tab" href="/demo">Demo</a>
   </div>
 </div> 
 
@@ -107,38 +107,27 @@
   <body>
 	  <script src="script.js"></script>
 	  <div class='page'>
-	  <h1 class="text">Lists</h1>
+	  <h1 class="text">Navbar Tabs</h1>
 <br><br>
 
-<h2 class="center">Unordered List</h2>
-<ul class="center">
-	<li>Item 1</li>
-	<li>Item 2</li>
-	<li>Item 3</li>
-</ul>
-<h2 class="center">Ordered List</h2>
-<ol class="center">
-	<li>Item 1</li>
-	<li>Item 2</li>
-	<li>Item 3</li>
-</ol>
+<p>An example of the navbar tabs element is the navbar for this page. The active tab has a background, and others show bg on hover.
+	<br><br>
+	<code class='code'>tab</code> - Add this class to any navbar element you want to show the hover bg on.
+	<br><br>
+	<code class='code'>tabactive</code> - Add this class to the current navbar element.
+</p>
 
-<pre><code class='html'>
-
-&lt;h2 class="center">Unordered List&lt;/h2>
-&lt;ul class="center">
-	&lt;li>Item 1&lt;/li>
-	&lt;li>Item 2&lt;/li>
-	&lt;li>Item 3&lt;/li>
-&lt;/ul>
-&lt;h2 class="center">Ordered List&lt;/h2>
-&lt;ol class="center">
-	&lt;li>Item 1&lt;/li>
-	&lt;li>Item 2&lt;/li>
-	&lt;li>Item 3&lt;/li>
-&lt;/ol>
-
-	</code></pre>
+<pre>
+	<code class='html'>
+&lt;div class="topnav text">
+		&lt;a class="brand" href="#">Minimalist&lt;/a>
+		&lt;div class="topnavitem">
+		 &lt;a class="active topnavitem tab tabactive" href="#">Home&lt;/a>
+  &lt;a class="topnavitem tab" href="/demo">Demo&lt;/a>
+  &lt;/div>
+&lt;/div> 
+	</code>
+</pre>
 
 </div>
 <link rel="stylesheet" href="https://badge.coolcodersj.repl.co/style.css">

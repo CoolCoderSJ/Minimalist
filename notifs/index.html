@@ -96,7 +96,7 @@
 		  </ul>
 	  </div>
 	 <div class="topnav text">
-		<a class="brand" href="/">Minimalist</a>
+		<a class="brand" href="#">Minimalist</a>
 		<div class="topnavitem">
 		 <a class="active topnavitem" href="#">Home</a>
   <a class="topnavitem" href="/demo">Demo</a>
@@ -107,38 +107,32 @@
   <body>
 	  <script src="script.js"></script>
 	  <div class='page'>
-	  <h1 class="text">Lists</h1>
+	  <h1 class="text">Notifications</h1>
 <br><br>
+<div id="notif_container">
+	<input type="checkbox" id="toggle">
+<div class="success" id="notif">
+	A notification 
+<label for="toggle" id="togglelabel">x</label>
+</div>
+<br>
+<input type="checkbox" id="toggle">
+<div class="info" id="notif">
+	A notification 
+<label for="toggle" id="togglelabel">x</label>
+</div>
+</div>
+<p>An example of the notification element is the notification on the bottom right corner. Click the X to dismiss it. Note how it does not reappear on a page reload, but comes when you open this page again in a new tab. You can add multiple notifications by copy pasting the code, but the X acts as a clear all button and will dismiss all notifications.</p>
 
-<h2 class="center">Unordered List</h2>
-<ul class="center">
-	<li>Item 1</li>
-	<li>Item 2</li>
-	<li>Item 3</li>
-</ul>
-<h2 class="center">Ordered List</h2>
-<ol class="center">
-	<li>Item 1</li>
-	<li>Item 2</li>
-	<li>Item 3</li>
-</ol>
-
-<pre><code class='html'>
-
-&lt;h2 class="center">Unordered List&lt;/h2>
-&lt;ul class="center">
-	&lt;li>Item 1&lt;/li>
-	&lt;li>Item 2&lt;/li>
-	&lt;li>Item 3&lt;/li>
-&lt;/ul>
-&lt;h2 class="center">Ordered List&lt;/h2>
-&lt;ol class="center">
-	&lt;li>Item 1&lt;/li>
-	&lt;li>Item 2&lt;/li>
-	&lt;li>Item 3&lt;/li>
-&lt;/ol>
-
-	</code></pre>
+<pre>
+	<code class='html'>
+&lt;input type="checkbox" id="toggle">
+&lt;div class="info" id="notif">
+	A notification 
+&lt;label for="toggle" id="togglelabel">x&lt;/label>
+&lt;/div>
+	</code>
+</pre>
 
 </div>
 <link rel="stylesheet" href="https://badge.coolcodersj.repl.co/style.css">

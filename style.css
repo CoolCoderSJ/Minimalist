@@ -156,6 +156,26 @@ tr:nth-child(odd) {
 	border-color: #b6effb;
 }
 
+button.alert {
+	color: #842029;
+	background-color: #f5c2c7;
+}
+
+button.success {
+	color: #0f5132;
+	background-color: #badbcc;
+}
+
+button.warning {
+	color: #664d03;
+	background-color: #ffecb5;
+}
+
+button.info {
+	color: #055160;
+	background-color: #b6effb;
+}
+
 .coded-on-replit {
   position: fixed;
   bottom: 20px;
@@ -212,6 +232,18 @@ tr:nth-child(odd) {
 }
 
 .topnav a.active {
+  color: white;
+}
+
+.topnav .tab:hover {
+  background-color: #373e48 !important;
+  border-radius: 8px !important;
+  color: white;
+}
+
+.topnav a.tabactive {
+  background-color: #373e48;
+  border-radius: 8px;
   color: white;
 }
 
@@ -306,8 +338,8 @@ html {
 
 .page {
 	background-color: #21252b;
-	margin-left: 200px;
-	margin-right: 200px;
+	margin-left: 100px;
+	margin-right: 100px;
 	height: 100%;
 	padding-right: 10px;
 	padding-left: 20px;
@@ -333,6 +365,7 @@ html {
 	padding: 20px;
 	padding-left: 0px;
 	padding-top: 110px;
+	overflow-y: auto;
 }
 
 .sidebar ul, .sidebar ol {
@@ -345,4 +378,154 @@ html {
 
 .center {
 	text-align: center;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+.badge, .badge:hover, .badge:active, .badge2, .badge2:hover, .badge2:active, .badge3, .badge3:hover, .badge3:active, .badge4, .badge4:hover, .badge4:active {
+  font-family: 'Raleway', sans-serif;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: inline-flex;
+  padding: 8px 12px;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  background-color: rgb(17, 29, 44);
+  border-radius: 6px;
+  font-size: 12px;
+  transition: 0.5s !important;
+}
+
+.badge2, .badge2:hover, .badge2:active {
+	bottom: 60px;
+	right: 20px;
+}
+
+.badge3, .badge3:hover, .badge3:active {
+	bottom: 100px;
+	right: 20px;
+}
+
+.badge4, .badge4:hover, .badge4:active {
+	bottom: 140px;
+	right: 20px;
+}
+
+
+.badge img, .badge2 img, .badge3 img, .badge4 img {
+  width: 20px;
+  margin-right: 4px;
+  height: auto;
+}
+
+.badge img:hover, .badge:hover > img, .badge2 img:hover, .badge2:hover > img, .badge3 img:hover, .badge3:hover > img, .badge4 img:hover, .badge4:hover > img {
+	animation: rotation 2s infinite linear;
+}
+
+.badge:hover, .badge2:hover, .badge3:hover, .badge4:hover {
+	cursor: pointer !important;
+	font-size: 13.5px !important;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.no-animate, .no-animate:hover, .no-animate:active, .no-animate > img, .no-animate:hover > img, .no-animate:active > img {
+	animation: none !important;
+}
+
+#toggle {
+	display: none;
+}
+
+#togglelabel {
+	color: black;
+	float: right;
+	margin-left: 10px;
+}
+
+#togglelabel:hover {
+	cursor: pointer;
+}
+
+#toggle:checked + #togglelabel::after {
+	transition: 0.5s;
+	opacity: 0;
+	/* content: "Clicked"; */
+}
+
+#toggle:checked ~ #notif {
+	transition: 0.5s !important;
+	opacity: 0;
+}
+
+#notif {
+	transition: 0.5s;
+	opacity: 1;
+}
+
+
+#notif_container {
+	max-height: 300px;
+	bottom: 80px !important;
+	right: 20px !important;
+	position: fixed;
+}
+
+.progressbg {
+	height: 10px;
+	color: #2e4152;
+	background-color: #2e4152;
+	border: none;
+	border-radius: 6px;
+}
+
+.progress {
+	height: 10px;
+	color: #3b88fd;
+	background-color: #3b88fd;
+	border: none;
+	border-radius: 6px;
+	width: 50%;
+}
+
+.progress-alert {
+	height: 10px;
+	border: none;
+	border-radius: 6px;
+	width: 50%;
+	background-color: #f5c2c7;
+}
+
+.progress-success {
+	height: 10px;
+	border: none;
+	border-radius: 6px;
+	width: 50%;
+	background-color: #badbcc;
+}
+
+.progress-warning {
+	height: 10px;
+	border: none;
+	border-radius: 6px;
+	width: 50%;
+	background-color: #ffecb5;
+}
+
+.progress-info {
+	height: 10px;
+	border: none;
+	border-radius: 6px;
+	width: 50%;
+	background-color: #b6effb;
 }
