@@ -1,0 +1,135 @@
+{% extends 'base.html' %}
+{% block title %}Forms{% endblock %}
+{% block theme %}{{ theme }}{% endblock %}
+{% block pagetitle %}Forms{% endblock %}
+{% block content %}
+<h2 class="text center">Forms</h2>
+<fieldset class="fieldset">
+	<legend class="text">Fieldset</legend>
+	<form>
+		<label class="text">Email</label>
+		<input class="input" type="email" placeholder="email@example.com">
+		<br>
+		<label class="text">Password</label>
+		<br>
+		<input class="input" type="password" placeholder="super-secure-password">
+		<br>
+		<br>
+		
+		<label class="container">Remember Me
+  <input type="checkbox" checked="checked">
+  <span class="checkmark"></span>
+</label>
+		<br>
+		<br>
+		<button class="btn" type="submit">Submit</button>
+	</form>
+</fieldset>
+
+<pre><code class='html'>
+
+&lt;fieldset class="fieldset">
+	&lt;legend class="text">Fieldset&lt;/legend>
+	&lt;form>
+		&lt;label class="text">Email&lt;/label>
+		&lt;input class="input" type="email" placeholder="email@example.com">
+		&lt;br>
+		&lt;label class="text">Password&lt;/label>
+		&lt;br>
+		&lt;input class="input" type="password" placeholder="super-secure-password">
+		&lt;br>
+		&lt;br>
+		
+		&lt;label class="container">Remember Me
+		&lt;input type="checkbox" checked="checked">
+		&lt;span class="checkmark">&lt;/span>
+		&lt;/label>
+		&lt;br>
+		&lt;br>
+		&lt;button class="btn" type="submit">Submit&lt;/button>
+	&lt;/form>
+&lt;/fieldset>
+
+	</code></pre>
+
+<br><br>
+<h2>Disabled Input</h2>
+<input class="input" type="text" placeholder="Can't touch me!" disabled>
+<pre>
+	<code class='html'>
+		&lt;input class="input" type="text" placeholder="Can't touch me!" disabled>
+	</code>
+</pre>
+<br><br>
+<h2>Readonly Input</h2>
+<input class="input" type="text" placeholder="Read me!" readonly>
+<pre>
+	<code class='html'>
+		&lt;input class="input" type="text" placeholder="Read me!" readonly>
+	</code>
+</pre>
+
+<br><br>
+<h2>Textarea</h2>
+<textarea class="textarea" placeholder="Type here!"></textarea>
+<pre>
+	<code class='html'>
+		&lt;textarea class="textarea" placeholder="Type here!"></textarea>
+	</code>
+</pre>
+<br><br>
+<h2>Radio Buttons and Checkmarks</h2>
+<label class="container">One
+  <input type="radio" checked="checked" name="radio">
+  <span class="radio"></span>
+</label>
+<label class="container">Two
+  <input type="radio" name="radio">
+  <span class="radio"></span>
+</label>
+<label class="container">Three
+  <input type="radio" name="radio">
+  <span class="radio"></span>
+</label>
+<label class="container">Four
+  <input type="radio" name="radio">
+  <span class="radio"></span>
+</label>
+<br>
+<label class="container">Remember Me
+  <input type="checkbox" checked="checked">
+  <span class="checkmark"></span>
+</label>
+<br><br>
+<pre class="html">
+	<code>
+		&lt;label class="container">One
+  &lt;input type="radio" checked="checked" name="radio">
+  &lt;span class="radio">&lt;/span>
+&lt;/label>
+<br><br>
+&lt;label class="container">Remember Me
+		&lt;input type="checkbox" checked="checked">
+		&lt;span class="checkmark">&lt;/span>
+		&lt;/label>
+	</code>
+</pre>
+
+<br><br>
+<h2>Toggle Switches</h2>
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+
+<br>
+<pre class="html">
+	<code>
+&lt;label class="switch">
+  &lt;input type="checkbox">
+  &lt;span class="slider round">&lt;/span>
+&lt;/label>
+</code>
+</pre>
+
+{% endblock %}

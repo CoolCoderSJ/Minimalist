@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}Navbar{% endblock %}
+{% block theme %}{{ theme }}{% endblock %}
+{% block pagetitle %}Navbar{% endblock %}
+{% block content %}
+<p>A good example of the navbar element is the Minimalist documentation. The navbar used on this site is the navbar taken directly from Minimalist.</p>
+
+<pre>
+	<code class='html'>
+&lt;div class="topnav text">
+	&lt;a class="brand" href="#">{{ BRAND NAME }}&lt;/a>
+	&lt;div class="topnavitem">
+		&lt;a class="active topnavitem" href="#">Home&lt;/a>
+  		&lt;a class="topnavitem" href="link1">Link1&lt;/a>
+  		&lt;a class="topnavitem" href="https://google.com/" target="_blank">Link2&lt;/a>
+  	&lt;/div>
+&lt;/div> 
+	</code>
+</pre>
+{% endblock %}

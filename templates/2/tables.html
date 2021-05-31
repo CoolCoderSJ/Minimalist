@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block title %}Tables{% endblock %}
+{% block theme %}{{ theme }}{% endblock %}
+{% block pagetitle %}Tables{% endblock %}
+{% block content %}
+<table style="width:100%" class="text">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table> 
+
+<pre>
+	<code class='html'>
+&lt;table style="width:100%" class="text">
+  &lt;tr>
+    &lt;th>Firstname&lt;/th>
+    &lt;th>Lastname&lt;/th>
+    &lt;th>Age&lt;/th>
+  &lt;/tr>
+  &lt;tr>
+    &lt;td>Jill&lt;/td>
+    &lt;td>Smith&lt;/td>
+    &lt;td>50&lt;/td>
+  &lt;/tr>
+  &lt;tr>
+    &lt;td>Eve&lt;/td>
+    &lt;td>Jackson&lt;/td>
+    &lt;td>94&lt;/td>
+  &lt;/tr>
+&lt;/table> 
+	</code>
+</pre>
+{% endblock %}

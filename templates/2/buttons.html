@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block title %}Buttons{% endblock %}
+{% block theme %}{{ theme }}{% endblock %}
+{% block pagetitle %}Buttons{% endblock %}
+{% block content %}
+<button>Default Button</button>
+<br><br>
+<button class='alert'>Alert Button</button>
+<br><br>
+<button class='success'>Success Button</button>
+<br><br>
+<button class='info'>Info Button</button>
+<br><br>
+<button class='warning'>Warning Button</button>
+
+<pre class='html'>
+	<code>
+&lt;button>Default Button&lt;/button>
+&lt;br>&lt;br>
+&lt;button class='alert'>Alert Button&lt;/button>
+&lt;br>&lt;br>
+&lt;button class='success'>Success Button&lt;/button>
+&lt;br>&lt;br>
+&lt;button class='info'>Info Button&lt;/button>
+&lt;br>&lt;br>
+&lt;button class='warning'>Warning Button&lt;/button>
+	</code>
+</pre>
+
+<br><br>
+<h2>File Upload Button</h2>
+<div class="fileUpload">
+    <p>Upload</p>
+    <input type="file" class="upload" />
+</div>
+<pre class='html'>
+	<code>
+&lt;div class="fileUpload">
+    &lt;p>Upload&lt;/p>
+    &lt;input type="file" class="upload" />
+&lt;/div>
+	</code>
+</pre>
+{% endblock %}

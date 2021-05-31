@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block title %}Notifications{% endblock %}
+{% block theme %}{{ theme }}{% endblock %}
+{% block pagetitle %}Notifications{% endblock %}
+{% block content %}
+<div id="notif_container">
+	<input type="checkbox" id="toggle">
+<div class="success" id="notif">
+	A notification 
+<label for="toggle" id="togglelabel">x</label>
+</div>
+<br>
+<input type="checkbox" id="toggle">
+<div class="warning" id="notif">
+	A notification 
+<label for="toggle" id="togglelabel">x</label>
+</div>
+</div>
+<p>An example of the notification element is the notification on the bottom right corner. Click the X to dismiss it. Note how it does not reappear on a page reload, but comes when you open this page again in a new tab. You can add multiple notifications by copy pasting the code, but the X acts as a clear all button and will dismiss all notifications.</p>
+
+<pre>
+	<code class='html'>
+&lt;input type="checkbox" id="toggle">
+&lt;div class="info" id="notif">
+	A notification 
+&lt;label for="toggle" id="togglelabel">x&lt;/label>
+&lt;/div>
+	</code>
+</pre>
+{% endblock %}

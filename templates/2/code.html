@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block title %}Code{% endblock %}
+{% block theme %}{{ theme }}{% endblock %}
+{% block pagetitle %}Code{% endblock %}
+{% block content %}
+<p class="text">Did you know that you can copy text with <code class="code"> CTRL + C</code> or <code class="code"> CMD + C</code>?</p>
+	<pre class="text">
+		<code>
+/*
+* Minimalist, Copyright 2021 Shuchir Jain
+* https://repl.it/@CoolCoderSJ/Minimalist#style.css
+* https://github.com/CoolCoderSJ/Minimalist
+* https://repl.it/@CoolCoderSJ
+* https://github.com/CoolCoderSJ
+*/
+		</code>
+	</pre>
+<br><br>
+<p>To use short code, such as the <code class="code"> CTRL + C</code> mentioned above, add a <code class="code">code</code> class to an element.</p>
+
+<pre>
+	<code class='html'>
+		&lt;code class="code"> CTRL + C&lt;/code>
+	</code>
+</pre>
+<br><br>
+<p>Minimalist does not have direct support for syntax highlighting for codeblocks. To use syntax highlighting with codeblocks, visit <a href="https://syntax-highlighter.coolcodersj.repl.co/">Syntax Highlighter</a></p>
+
+{% endblock %}

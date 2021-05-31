@@ -1,0 +1,774 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap');
+
+.text, .link, p, h1, h2, h3, h4, h5, h6, a, label, legend, textarea, button, html, body, footer, .replit-auth-button {
+	color: white;
+	font-family: 'Baloo Paaji 2', cursive;
+}
+
+textarea {
+	border-radius: 6px;
+	height: 60px;
+	font-family: 'Baloo Paaji 2', cursive;
+	padding-top: 5px;
+	background-color: #282740;
+	color: white;
+	border: none;
+}
+
+.btn, button, .replit-auth-button {
+	height: 50px;
+	width: 100%;
+	border-radius: 6px;
+	background-color: #282740;
+	color: white;
+	border: none;
+	cursor: pointer;
+    box-shadow: #141320 4px 4px 4px 4px;
+}
+
+button:active {
+    box-shadow: none;
+}
+
+.select, select {
+	font-family: 'Baloo Paaji 2', cursive;
+	width: 100%;
+	height: 30px;
+	border: none;
+	font-size: 18px;
+	color: white;
+	background-color: #45446f;
+	border-radius: 5px;
+	box-shadow: 4px 4px #282740;
+}
+
+option {
+	background-color: #45446f;
+	font-family: 'Baloo Paaji 2', cursive;
+	width: 100%;
+	height: 30px;
+	border: none;
+	font-size: 18px;
+	color: white;
+	border-radius: 5px;
+}
+
+html {
+	background: #1f1e2e !important;
+	padding: 100px;
+}
+
+hr {
+	width: 80%;
+	color: #3f3c5d;
+}
+
+ul {
+	list-style-type: circle;
+	color: white;
+	font-family: 'Baloo Paaji 2', cursive;
+}
+
+ol {
+	color: white;
+	font-family: 'Baloo Paaji 2', cursive;
+	list-style-type: upper-roman;
+}
+
+fieldset {
+	border-color: #3f3c5d;
+	border-style: solid;
+	border-radius: 8px;
+}
+
+.input {
+	border-radius: 6px;
+	height: 30px;
+	width: 100%;
+	font-family: 'Baloo Paaji 2', cursive;
+	background-color: #282740;
+	color: white;
+	border: none;
+	padding-left: 3px;
+}
+
+blockquote {
+  border-left: 4px solid #282740;
+  margin: 1.5em 0em;
+  padding: 0.5em 1em;
+  font-style: italic;
+}
+
+blockquote > footer {
+  margin-top: 10px;
+  font-style: normal;
+}
+
+table {
+  border-collapse: collapse;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+td, th {
+  padding: 6px;
+  text-align: left;
+}
+
+th {
+  border-bottom: 1px solid #dbdbdb;
+}
+
+table, th, td {
+	border-radius: 8px;
+	border: 1px solid black;
+}
+
+tr:nth-child(even) { 
+    background-color: #2a283e; 
+}
+tr:nth-child(odd) { 
+    background-color: #34324d; 
+}
+
+.alert, .success, .info, .warning {
+	border-radius: .25rem;
+	padding: 12px;
+	border: 1px solid transparent;
+}
+
+.alert {
+	color: #842029;
+	background-color: #f8d7da;
+	border-color: #f5c2c7;
+}
+
+.success {
+	color: #0f5132;
+	background-color: #d1e7dd;
+	border-color: #badbcc;
+}
+
+.warning {
+	color: #664d03;
+	background-color: #fff3cd;
+	border-color: #ffecb5;
+}
+
+.info {
+	color: #055160;
+	background-color: #cff4fc;
+	border-color: #b6effb;
+}
+
+button.alert {
+	color: #842029;
+	background-color: #f5c2c7;
+}
+
+button.success {
+	color: #0f5132;
+	background-color: #badbcc;
+}
+
+button.warning {
+	color: #664d03;
+	background-color: #ffecb5;
+}
+
+button.info {
+	color: #055160;
+	background-color: #b6effb;
+}
+
+.topnav {
+  overflow: hidden;
+  padding-bottom: 25px;
+  padding-top: 10px;
+  background-color: #2a283e;
+
+}
+
+.topnav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2d6;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 8px;
+}
+
+.topnavitem {
+	vertical-align: middle;
+}
+
+.topnavitem a:hover {
+  border-radius: 8px;
+  color: white;
+}
+
+.topnav a.active {
+  color: white;
+}
+
+.topnav .tab:hover {
+  background-color: #2a283e !important;
+  border-radius: 8px !important;
+  color: white;
+}
+
+.topnav a.tabactive {
+  background-color: #2a283e;
+  border-radius: 8px;
+  color: white;
+}
+
+.brand {
+	padding-right: 30px !important;
+	font-size: 25px !important;
+}
+
+.code {
+	padding: 5px;
+	color: white;
+	font-family: 'Baloo Paaji 2', cursive;
+	background-color: #53517b;
+	border-radius: 6px;
+}
+
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+	background-color: #282740;
+	border: none;
+	border-radius: 8px;
+	width: 100px;
+}
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding-top: 10px;
+	padding-left: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+	height: 50px;
+	border-radius: 6px;
+	width: 10%;
+}
+
+.fileUpload p {
+	color: white;
+	font-family: 'Baloo Paaji 2', cursive;
+	margin-top: 15px !important;
+	padding-left: 20px;
+	width: 10%;
+}
+
+
+.card {
+	background-color: #15141f;
+	height: 100%;
+	width: 45%;
+	padding-bottom: 40px;
+	padding-left: 20px;
+	padding-right: 10px;
+	padding-top: 20px;
+	border: none;
+	border-radius: 8px;
+	scale: 100%;
+	transition: 500ms;
+}
+
+.card:hover {
+	scale: 110%;
+	transition: 500ms;
+}
+
+@media (max-width: 768px) {
+html {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.page {
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+	width: 100%;
+}
+
+.card {
+	background-color: #15141f;
+	height: 100%;
+	width: 90%;
+	padding-bottom: 40px;
+	padding-left: 20px;
+	padding-right: 10px;
+	padding-top: 20px;
+	border: none;
+	border-radius: 8px;
+}
+
+.sidebar {
+	display: none !important;
+}
+}
+
+.page {
+	background-color: #2a283e;
+	margin-left: 100px;
+	margin-right: 100px;
+	height: 100%;
+	padding-right: 10px;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-bottom: 200px !important;
+	border: none;
+	border-radius: 6px;
+	overflow: hidden !important;
+}
+
+.page img {
+	width: 200px;
+}
+
+.sidebar {
+	background: #2a283e;
+	position: fixed;
+	width: 200px;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	margin-left: 0px !important;
+	padding: 20px;
+	padding-left: 0px;
+	padding-top: 110px;
+	overflow-y: auto;
+    margin-right: 200px;
+    display: block;
+}
+
+.sidebari {
+	position: fixed;
+	width: 40px;
+    height: 100%;
+	left: 0;
+	bottom: 0;
+	margin-left: 0px !important;
+	padding: 20px;
+	padding-left: 0px;
+	padding-top: 110px;
+	overflow-y: auto;
+    margin-right: 40px;
+    overflow: hidden;
+}
+
+.sidebari div {
+    margin-top: 125px;
+    background: #2a283e;
+    height: 100%;
+}
+
+.sidebari i:hover {
+    cursor: pointer;
+}
+
+.sidebar ul, .sidebar ol {
+	list-style-type: none;
+}
+
+.sidebar a {
+	text-decoration: none;
+}
+
+.center {
+	text-align: center;
+	list-style-position: inside;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+.badge, .badge:hover, .badge:active, .badge2, .badge2:hover, .badge2:active, .badge3, .badge3:hover, .badge3:active, .badge4, .badge4:hover, .badge4:active {
+  font-family: 'Baloo Paaji 2', cursive;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: inline-flex;
+  padding: 8px 12px;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  background-color: rgb(17, 29, 44);
+  border-radius: 6px;
+  font-size: 12px;
+  transition: 0.5s !important;
+}
+
+.badge2, .badge2:hover, .badge2:active {
+	bottom: 60px;
+	right: 20px;
+}
+
+.badge3, .badge3:hover, .badge3:active {
+	bottom: 100px;
+	right: 20px;
+}
+
+.badge4, .badge4:hover, .badge4:active {
+	bottom: 140px;
+	right: 20px;
+}
+
+
+.badge img, .badge2 img, .badge3 img, .badge4 img {
+  width: 20px;
+  margin-right: 4px;
+  height: auto;
+}
+
+.badge img:hover, .badge:hover > img, .badge2 img:hover, .badge2:hover > img, .badge3 img:hover, .badge3:hover > img, .badge4 img:hover, .badge4:hover > img {
+	animation: rotation 2s infinite linear;
+}
+
+.badge:hover, .badge2:hover, .badge3:hover, .badge4:hover {
+	cursor: pointer !important;
+	font-size: 13.5px !important;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.no-animate, .no-animate:hover, .no-animate:active, .no-animate > img, .no-animate:hover > img, .no-animate:active > img {
+	animation: none !important;
+}
+
+#toggle {
+	display: none;
+}
+
+#togglelabel {
+	color: black;
+	float: right;
+	margin-left: 10px;
+}
+
+#togglelabel:hover {
+	cursor: pointer;
+}
+
+#toggle:checked + #togglelabel::after {
+	transition: 0.5s;
+	opacity: 0;
+	/* content: "Clicked"; */
+}
+
+#toggle:checked ~ #notif {
+	transition: 0.5s !important;
+	opacity: 0;
+}
+
+#notif {
+	transition: 0.5s;
+	opacity: 1;
+	box-shadow: 3px 3px 3px #000;
+}
+
+
+#notif_container {
+	max-height: 300px;
+	max-width: 300px;
+	bottom: 80px !important;
+	right: 20px !important;
+	position: fixed;
+}
+
+.progressbg {
+	height: 10px;
+	color: #282740;
+	background-color: #282740;
+	border: none;
+	border-radius: 6px;
+	overflow: hidden;
+}
+
+.progress {
+	height: 10px;
+	color: #3b88fd;
+	background-color: #3b88fd;
+	border: none;
+	border-radius: 6px;
+	width: 50%;
+}
+
+.progress-alert {
+	height: 10px;
+	border: none;
+	border-radius: 6px;
+	width: 50%;
+	background-color: #f5c2c7;
+}
+
+.progress-success {
+	height: 10px;
+	border: none;
+	border-radius: 6px;
+	width: 50%;
+	background-color: #badbcc;
+}
+
+.progress-warning {
+	height: 10px;
+	border: none;
+	border-radius: 6px;
+	width: 50%;
+	background-color: #ffecb5;
+}
+
+.progress-info {
+	height: 10px;
+	border: none;
+	border-radius: 6px;
+	width: 50%;
+	background-color: #b6effb;
+}
+
+.sidebar li:hover {
+	transition: 0.5s;
+	padding-left: 15px;
+}
+
+.sidebar li {
+	transition: 0.5s;
+	padding-left: 0px;
+}
+
+ /* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #68659a;
+  border-radius: 4px;
+}
+
+.radio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #68659a;
+  border-radius: 50%;
+}
+
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark, .container input:checked ~ .radio {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after, .radio:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after, .container input:checked ~ .radio:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 5px;
+  top: 3px;
+  width: 3px;
+  height: 6px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+} 
+
+.container .radio:after {
+  left: 5px;
+  top: 2px;
+  width: 3px;
+  height: 6px;
+  background: solid white;
+  border-radius: 50%;
+} 
+
+ /* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #68659a;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(16px);
+  -ms-transform: translateX(16px);
+  transform: translateX(16px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.spinner {
+  border: 5px solid #68659a; 
+  border-top: 5px solid #2196F3; 
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 2.5s linear infinite;
+}
+
+.spinner-alert {
+	border-top: 5px solid #f5c2c7;
+}
+
+.spinner-success {
+	border-top: 5px solid #badbcc;
+}
+
+.spinner-warning {
+	border-top: 5px solid #ffecb5;
+}
+
+.spinner-info {
+	border-top: 5px solid #b6effb;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+.btt {
+  border: 3px solid #2196F3; 
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  bottom: 65px;
+  right: 65px;
+}
+
+.btt-arr {
+	border: solid #2196F3;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  color: #2196F3;
+  margin-left: 10.5px;
+  margin-top: 12px;
+  transition: 0.2s;
+  scale: 100%;
+}
+
+.btt:hover {
+	transition: 0.2s;
+	cursor: pointer;
+	scale: 110%;
+}
+
+html {
+  scroll-behavior: smooth;
+}

@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %}Navbar Tabs{% endblock %}
+{% block theme %}{{ theme }}{% endblock %}
+{% block pagetitle %}Navbar Tabs{% endblock %}
+{% block content %}
+<p>An example of the navbar tabs element is the navbar for this page. The active tab has a background, and others show bg on hover.
+	<br><br>
+	<code class='code'>tab</code> - Add this class to any navbar element you want to show the hover bg on.
+	<br><br>
+	<code class='code'>tabactive</code> - Add this class to the current navbar element.
+</p>
+
+<pre>
+	<code class='html'>
+&lt;div class="topnav text">
+		&lt;a class="brand" href="#">Minimalist&lt;/a>
+		&lt;div class="topnavitem">
+		 &lt;a class="active topnavitem tab tabactive" href="#">Home&lt;/a>
+  &lt;a class="topnavitem tab" href="/demo">Demo&lt;/a>
+  &lt;/div>
+&lt;/div> 
+	</code>
+</pre>
+{% endblock %}

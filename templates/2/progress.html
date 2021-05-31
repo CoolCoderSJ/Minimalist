@@ -1,0 +1,111 @@
+{% extends 'base.html' %}
+{% block title %}Progress Bars{% endblock %}
+{% block theme %}{{ theme }}{% endblock %}
+{% block pagetitle %}Progress Bars{% endblock %}
+{% block content %}
+<div class="progressbg">
+	<div class="progress" style="width: 30%"></div>
+</div>
+<br>
+<div class="progressbg">
+	<div class="progress-alert" style="width: 40%"></div>
+</div>
+<br>
+<div class="progressbg">
+	<div class="progress-success" style="width: 50%"></div>
+</div>
+<br>
+<div class="progressbg">
+	<div class="progress-warning" style="width: 60%"></div>
+</div>
+<br>
+<div class="progressbg">
+	<div class="progress-info" style="width: 70%"></div>
+</div>
+
+<pre>
+	<code class='language-html'>
+&lt;div class="progressbg">
+	&lt;div class="progress" style="width: 30%">&lt;/div>
+&lt;/div>
+&lt;br>
+&lt;div class="progressbg">
+	&lt;div class="progress-alert" style="width: 40%">&lt;/div>
+&lt;/div>
+&lt;br>
+&lt;div class="progressbg">
+	&lt;div class="progress-success" style="width: 50%">&lt;/div>
+&lt;/div>
+&lt;br>
+&lt;div class="progressbg">
+	&lt;div class="progress-warning" style="width: 60%">&lt;/div>
+&lt;/div>
+&lt;br>
+&lt;div class="progressbg">
+	&lt;div class="progress-info" style="width: 70%">&lt;/div>
+&lt;/div>
+	</code>
+</pre>
+<p>There are 5 classes-<br><br>
+<code class="code">progress</code> - A normal progress bar. (First one shown)
+<br><br>
+<code class="code">progress-alert</code> - A red progress bar. (Second one shown)
+<br><br>
+<code class="code">progress-success</code> - A green progress bar. (Third one shown)
+<br><br>
+<code class="code">progress-warning</code> - A yellow progress bar. (Fourth one shown)
+<br><br>
+<code class="code">progress-info</code> - A lighter shade of blue progress bar. (Last one shown)
+<br><br>
+You can customize how much of the bar is filled by changing the width css var for the inner div.
+</p>
+
+<br><br>
+<h2>Animated Bars</h2>
+<button onclick="document.getElementById('animated_bar').setAttribute('style', 'transition: 0.5s; transform: scaleX(3);')">Start Animation</button><br><br>
+<div class="progressbg">
+	<div id="animated_bar" class="progress" style="width: 30%"></div>
+</div>
+
+<pre>
+	<code class="language-html">
+&lt;button onclick="document.getElementById('animated_bar').setAttribute('style', 'width: 30%; transition: 0.5s; transform: scaleX(3);')">Start Animation&lt;/button>&lt;br>&lt;br>
+&lt;div class="progressbg">
+	&lt;div id="animated_bar" class="progress" style="width: 30%">&lt;/div>
+&lt;/div>
+	</code>
+</pre>
+<br><br>
+<p>To use an animated progress bar, you need to use the javascript setAttribute function. To animate the bar, set the attribute 'style' with the following css-<br><br>
+<code class="code">transition: 0.5s</code> - How fast you want it to move (Change 0.5s to any number)
+<br><br>
+<code class="code">transform: scaleX(3);</code> is the CSS animation. (Change 3 to 100 divided by the decimal form of the percentage.)
+</p>
+<br><br>
+<h2>Custom Height</h2>
+<div class="progressbg" style="height: 1px;">
+	<div class="progress" style="width: 30%; height: 1px;"></div>
+</div>
+<br>
+<div class="progressbg" style="height: 20px;">
+	<div class="progress" style="width: 30%; height: 20px;"></div>
+</div>
+
+<br>
+<pre class="html">
+	<code>
+&lt;div class="progressbg" style="height: 1px;">
+	&lt;div class="progress" style="width: 30%; height: 1px;">&lt;/div>
+&lt;/div>
+&lt;br>
+&lt;div class="progressbg" style="height: 20px;">
+	&lt;div class="progress" style="width: 30%; height: 20px;">&lt;/div>
+&lt;/div>
+	</code>
+</pre>
+
+<br>
+<p>You can change the height of the progress bar by changing the CSS height variable. Be sure to change the height of both divs to make sure it renders properly.</p>
+
+
+{% endblock %}
